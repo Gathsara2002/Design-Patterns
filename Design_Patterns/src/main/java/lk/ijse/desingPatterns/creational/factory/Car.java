@@ -7,9 +7,9 @@ package lk.ijse.desingPatterns.creational.factory;
 
 /*Sub class / Concrete product*/
 
-public class Car implements Vehicle{
+public class Car implements Vehicle {
     @Override
     public void drive() {
-
+        System.out.println("Drive motorbike");
     }
 }
