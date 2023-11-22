@@ -1,4 +1,4 @@
-package lk.ijse.desingPatterns.structural;
+package lk.ijse.desingPatterns.creational.factory;
 
 /**
  * @author : Gathsara
