@@ -8,5 +8,5 @@ package lk.ijse.desingPatterns.creational.factory;
 /*Factory interface - Use to declare object creation  method */
 
 public interface VehicleFactory {
-    Vehicle createVehicle();
+    Vehicle createVehicle(String type);
 }
