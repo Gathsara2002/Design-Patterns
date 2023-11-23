@@ -11,7 +11,7 @@ public class Singleton {
 
     /*private constructor*/
     private Singleton() {
-
+        /*you can create any class object(not your class object) in here*/
     }
 
     /*public method get instance*/
