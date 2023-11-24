@@ -6,7 +6,7 @@ package lk.ijse.desingPatterns.structural.facade;
  **/
 
 /*facade impl*/
-public class FacadeImpl {
+public class FacadeImpl implements Facade {
 
     private final Circle circle;
     private final Square square;
@@ -16,4 +16,13 @@ public class FacadeImpl {
         circle = new Circle();
     }
 
+    @Override
+    public void drawCircle() {
+        circle.draw();
+    }
+
+    @Override
+    public void drawSquare() {
+        square.draw();
+    }
 }
