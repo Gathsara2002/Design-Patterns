@@ -1,5 +1,9 @@
 package lk.ijse.designPrinciples.O3_open_close_principle;
 
+import lk.ijse.designPrinciples.O3_open_close_principle.service.Account;
+
+import java.nio.channels.AcceptPendingException;
+
 /**
  * @author : Gathsara
  * created : 12/5/2023 -- 5:21 PM
@@ -39,4 +43,16 @@ public class BankAppWithdrawalService {
     /* But here we did modifications rather than doing extensions */
     /* S0, we violate the rule */
 
+    Account account;
+
+    public BankAppWithdrawalService(Account account) {
+        this.account = account;
+    }
+
+    public void depositToAccount(double amount){
+        account.deposit(amount);
+    }
+    public void withdrawFromAccount(double amount){
+        account.withdraw(amount);
+    }
 }
