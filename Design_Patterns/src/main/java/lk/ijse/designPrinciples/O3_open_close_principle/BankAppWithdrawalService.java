@@ -2,11 +2,11 @@ package lk.ijse.designPrinciples.O3_open_close_principle;
 
 /**
  * @author : Gathsara
- * created : 12/5/2023 -- 5:01 PM
+ * created : 12/5/2023 -- 5:21 PM
  **/
 public class BankAppWithdrawalService {
 
-    public void depositToSavingsAccount(double amount){
+    /*public void depositToSavingsAccount(double amount){
         System.out.println(amount + " Deposited to your Savings Account.!");
     }
 
@@ -22,7 +22,7 @@ public class BankAppWithdrawalService {
         System.out.println(amount + " Withdrawn from your Current Account.!");
     }
 
-    /* I want to implement another feature for Banking App Withdrawal Service*/
+    *//* I want to implement another feature for Banking App Withdrawal Service*//*
 
     public void depositToSalarySaverAccount(double amount){
         System.out.println(amount + " Deposited to your Salary Server Account.!");
@@ -30,7 +30,7 @@ public class BankAppWithdrawalService {
 
     public void withdrawFromSalarySaverAccount(double amount){
         System.out.println(amount + " Withdrawn from your Salary Server Account.!");
-    }
+    }*/
 
     /* So here for adding a new feature I had to modify the class */
     /* So, unfortunately we have violated the Open / Close principle */
