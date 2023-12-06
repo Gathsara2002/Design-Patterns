@@ -6,29 +6,29 @@ package lk.ijse.designPrinciples.O2_open_close_principle;
  **/
 public class BankAppWithdrawalService {
 
-    public void depositToSavingsAccount(double amount){
+    public void depositToSavingsAccount(double amount) {
         System.out.println(amount + " Deposited to your Savings Account.!");
     }
 
-    public void depositToCurrentAccount(double amount){
+    public void depositToCurrentAccount(double amount) {
         System.out.println(amount + " Deposited to your Current Account.!");
     }
 
-    public void withdrawFromSavingsAccount(double amount){
+    public void withdrawFromSavingsAccount(double amount) {
         System.out.println(amount + " Withdrawn from your Savings Account.!");
     }
 
-    public void withdrawFromCurrentAccount(double amount){
+    public void withdrawFromCurrentAccount(double amount) {
         System.out.println(amount + " Withdrawn from your Current Account.!");
     }
 
     /* I want to implement another feature for Banking App Withdrawal Service*/
 
-    public void depositToSalarySaverAccount(double amount){
+    public void depositToSalarySaverAccount(double amount) {
         System.out.println(amount + " Deposited to your Salary Server Account.!");
     }
 
-    public void withdrawFromSalarySaverAccount(double amount){
+    public void withdrawFromSalarySaverAccount(double amount) {
         System.out.println(amount + " Withdrawn from your Salary Server Account.!");
     }
 
