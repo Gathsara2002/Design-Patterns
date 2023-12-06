@@ -49,10 +49,21 @@ public class BankAppWithdrawalService {
         this.account = account;
     }
 
-    public void depositToAccount(double amount){
+    public void depositToAccount(double amount) {
         account.deposit(amount);
     }
-    public void withdrawFromAccount(double amount){
+
+    public void withdrawFromAccount(double amount) {
         account.withdraw(amount);
     }
+
+
+    /*Open Close principle eka apply karanna ona nm -
+
+     *adala class eke common method abstarct class ekakata danna.
+     *avashya classes types e abstract class eken extend karanna.
+     *open close principle eka danna ona class eke abstract class eken instance ekak ganna.
+     *constructor eka overload karaganna
+
+     */
 }
