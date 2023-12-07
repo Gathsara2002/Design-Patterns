@@ -1,10 +1,9 @@
 package lk.ijse.designPrinciples.liskov.O2_liskov;
 
-import lk.ijse.designPrinciples.liskov.O1_liskov.BankAppWithdrawalService;
-import lk.ijse.designPrinciples.liskov.O1_liskov.service.Account;
-import lk.ijse.designPrinciples.liskov.O1_liskov.service.types.CurrentAccount;
-import lk.ijse.designPrinciples.liskov.O1_liskov.service.types.SalarySaverAccount;
-import lk.ijse.designPrinciples.liskov.O1_liskov.service.types.SavingAccount;
+import lk.ijse.designPrinciples.liskov.O2_liskov.service.Account;
+import lk.ijse.designPrinciples.liskov.O2_liskov.service.types.CurrentAccount;
+import lk.ijse.designPrinciples.liskov.O2_liskov.service.types.SalarySaverAccount;
+import lk.ijse.designPrinciples.liskov.O2_liskov.service.types.SavingAccount;
 import lk.ijse.designPrinciples.liskov.O2_liskov.service.types.FixedAccount;
 
 /**
@@ -28,14 +27,14 @@ public class Main {
 
         Account savingAccount = new SavingAccount();
 
-        lk.ijse.designPrinciples.liskov.O1_liskov.BankAppWithdrawalService bankAppWithdrawalService1 = new lk.ijse.designPrinciples.liskov.O1_liskov.BankAppWithdrawalService(savingAccount);
+        BankAppWithdrawalService bankAppWithdrawalService1 = new BankAppWithdrawalService(savingAccount);
         bankAppWithdrawalService1.depositToAccount(100000);
         bankAppWithdrawalService1.withdrawFromAccount(40000);
 
         /*Super class*/           /*Sub Class */
         Account currentAccount = new CurrentAccount();
 
-        lk.ijse.designPrinciples.liskov.O1_liskov.BankAppWithdrawalService bankAppWithdrawalService2 = new lk.ijse.designPrinciples.liskov.O1_liskov.BankAppWithdrawalService(currentAccount);
+        BankAppWithdrawalService bankAppWithdrawalService2 = new BankAppWithdrawalService(currentAccount);
         bankAppWithdrawalService2.depositToAccount(200000);
         bankAppWithdrawalService2.withdrawFromAccount(30000);
 
@@ -43,7 +42,7 @@ public class Main {
         /*Super class*/           /*Sub Class */
         Account salaryServer = new SalarySaverAccount();
 
-        lk.ijse.designPrinciples.liskov.O1_liskov.BankAppWithdrawalService bankAppWithdrawalService3 = new BankAppWithdrawalService(salaryServer);
+        BankAppWithdrawalService bankAppWithdrawalService3 = new BankAppWithdrawalService(salaryServer);
         bankAppWithdrawalService3.depositToAccount(500000);
         bankAppWithdrawalService3.withdrawFromAccount(100000);
 
