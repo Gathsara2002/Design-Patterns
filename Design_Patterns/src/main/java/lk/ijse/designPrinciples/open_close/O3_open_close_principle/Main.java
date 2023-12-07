@@ -1,10 +1,10 @@
-package lk.ijse.designPrinciples.O3_open_close_principle;
+package lk.ijse.designPrinciples.open_close.O3_open_close_principle;
 
-import lk.ijse.designPrinciples.O3_open_close_principle.service.Account;
-import lk.ijse.designPrinciples.O3_open_close_principle.service.types.AnagiAccount;
-import lk.ijse.designPrinciples.O3_open_close_principle.service.types.CurrentAccount;
-import lk.ijse.designPrinciples.O3_open_close_principle.service.types.SalarySaverAccount;
-import lk.ijse.designPrinciples.O3_open_close_principle.service.types.SavingsAccount;
+import lk.ijse.designPrinciples.open_close.O3_open_close_principle.service.Account;
+import lk.ijse.designPrinciples.open_close.O3_open_close_principle.service.types.AnagiAccount;
+import lk.ijse.designPrinciples.open_close.O3_open_close_principle.service.types.CurrentAccount;
+import lk.ijse.designPrinciples.open_close.O3_open_close_principle.service.types.SalarySaverAccount;
+import lk.ijse.designPrinciples.open_close.O3_open_close_principle.service.types.SavingsAccount;
 
 /**
  * @author : Gathsara

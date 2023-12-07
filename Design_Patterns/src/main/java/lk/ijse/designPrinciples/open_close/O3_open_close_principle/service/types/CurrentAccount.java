@@ -1,6 +1,6 @@
-package lk.ijse.designPrinciples.O3_open_close_principle.service.types;
+package lk.ijse.designPrinciples.open_close.O3_open_close_principle.service.types;
 
-import lk.ijse.designPrinciples.O3_open_close_principle.service.Account;
+import lk.ijse.designPrinciples.open_close.O3_open_close_principle.service.Account;
 
 /**
  * @author : Gathsara

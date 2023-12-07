@@ -1,4 +1,4 @@
-package lk.ijse.designPrinciples.O1_open_close_principle;
+package lk.ijse.designPrinciples.open_close.O1_open_close_principle;
 
 /**
  * @author : Gathsara

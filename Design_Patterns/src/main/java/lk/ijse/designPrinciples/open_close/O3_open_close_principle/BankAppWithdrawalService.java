@@ -1,8 +1,6 @@
-package lk.ijse.designPrinciples.O3_open_close_principle;
+package lk.ijse.designPrinciples.open_close.O3_open_close_principle;
 
-import lk.ijse.designPrinciples.O3_open_close_principle.service.Account;
-
-import java.nio.channels.AcceptPendingException;
+import lk.ijse.designPrinciples.open_close.O3_open_close_principle.service.Account;
 
 /**
  * @author : Gathsara
