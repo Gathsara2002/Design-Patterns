@@ -1,8 +1,46 @@
 package lk.ijse.designPrinciples.interface_segregation.O3_interface_segregation;
 
+import lk.ijse.designPrinciples.interface_segregation.O3_interface_segregation.service.custom.Bank;
+import lk.ijse.designPrinciples.interface_segregation.O3_interface_segregation.service.custom.Loan;
+import lk.ijse.designPrinciples.interface_segregation.O3_interface_segregation.service.types.BankPayment;
+import lk.ijse.designPrinciples.interface_segregation.O3_interface_segregation.service.types.LoanPayment;
+
 /**
  * @author : Gathsara
  * created : 12/8/2023 -- 5:36 PM
  **/
 public class Main {
+
+    /* SOLID  */
+    /* I - Interface Segregation Principle */
+
+    /*
+     * This principle states that clients should not be forced to depend upon interfaces that
+     * they don't use
+     * */
+
+    public static void main(String[] args) {
+        Bank payment = new BankPayment();
+        payment.initiatePayments();
+        payment.status();
+        payment.status();
+        payment.getPayments();
+
+        /* Now these methods are unwanted methods and also will lead errors */
+        /* payment.initiateLoanSettlement();
+         * payment.initiateRePayment();
+         */  // now these are now allowed
+
+        Loan loan = new LoanPayment();
+        //loan.initiatePayments();
+        loan.status();
+        loan.status();
+        loan.getPayments();
+
+        loan.initiateLoanSettlement();
+        loan.initiateRePayment();
+
+        /* Now  clients are not be forced to depend upon interfaces that
+         * they don't use */
+    }
 }

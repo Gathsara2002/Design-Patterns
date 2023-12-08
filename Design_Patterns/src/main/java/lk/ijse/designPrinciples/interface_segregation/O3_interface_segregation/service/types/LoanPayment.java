@@ -1,8 +1,36 @@
 package lk.ijse.designPrinciples.interface_segregation.O3_interface_segregation.service.types;
 
+import lk.ijse.designPrinciples.interface_segregation.O3_interface_segregation.service.custom.Loan;
+
+import java.util.List;
+
 /**
  * @author : Gathsara
  * created : 12/8/2023 -- 5:39 PM
  **/
-public class LoanPayment {
+public class LoanPayment implements Loan {
+
+    /* Now, because the payment interface has changed and more methods were added, all the implementing
+     * classes now have to implement the new methods, The problem is, implementing them is unwanted and
+     * could lead to many side effects*/
+
+    @Override
+    public Object status() {
+        return null;
+    }
+
+    @Override
+    public List<Object> getPayments() {
+        return null;
+    }
+
+    @Override
+    public void initiateLoanSettlement() {
+        //Loan settlement logic
+    }
+
+    @Override
+    public void initiateRePayment() {
+        /* Loan repayment logics */
+    }
 }
