@@ -15,7 +15,7 @@ public class BankAppFixedDepositService {
         this.account = account;
     }
 
-    public void depositToAccount(double amount){
+    public void depositToAccount(double amount) {
         account.deposit(amount);
     }
 

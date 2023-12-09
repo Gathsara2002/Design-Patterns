@@ -9,7 +9,7 @@ import java.util.List;
  * created : 12/8/2023 -- 5:25 PM
  **/
 
-public class BankPayment  implements Payment {
+public class BankPayment implements Payment {
 
     @Override
     public void initiatePayments() {

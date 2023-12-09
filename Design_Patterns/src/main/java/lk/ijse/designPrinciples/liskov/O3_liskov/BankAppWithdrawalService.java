@@ -14,10 +14,11 @@ public class BankAppWithdrawalService {
         this.account = account;
     }
 
-    public void depositToAccount(double amount){
+    public void depositToAccount(double amount) {
         account.deposit(amount);
     }
-    public void withdrawFromAccount(double amount){
+
+    public void withdrawFromAccount(double amount) {
         account.withdraw(amount);
     }
 

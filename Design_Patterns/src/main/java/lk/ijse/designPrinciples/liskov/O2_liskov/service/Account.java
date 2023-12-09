@@ -7,6 +7,7 @@ package lk.ijse.designPrinciples.liskov.O2_liskov.service;
 public abstract class Account {
 
     public abstract void deposit(double amount);
+
     public abstract void withdraw(double amount);
 
 }

@@ -10,12 +10,15 @@ import java.util.List;
 public interface Payment {
 
     void initiatePayments();
+
     Object status();
+
     List<Object> getPayments();
 
     /* Introduce new features for the payments */
 
     void initiateLoanSettlement();
+
     void initiateRePayment();
 
 }

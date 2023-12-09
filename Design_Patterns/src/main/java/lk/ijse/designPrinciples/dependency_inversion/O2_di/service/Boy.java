@@ -6,9 +6,9 @@ package lk.ijse.designPrinciples.dependency_inversion.O2_di.service;
  **/
 
 public class Boy {
-    SuperGirl girl= new Girl(); // property injection
+    SuperGirl girl = new Girl(); // property injection
 
-    public void chatWithGirl(){
+    public void chatWithGirl() {
         //Girl girl = new Girl(); // Violate DI Principle
         // Now both depend on abstraction
         girl.chat();
