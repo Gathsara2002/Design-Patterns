@@ -19,7 +19,7 @@ public class Main {
      * */
     public static void main(String[] args) {
 
-        Boy boy = new Bloy(); //Boy is a High Level Class
+        Boy boy = new Boy(); //Boy is a High Level Class
         boy.chatWithGirl();
     }
 
