@@ -1,6 +1,5 @@
 package lk.ijse.desingPatterns.behavioural.observer.service;
 
-import java.util.Observer;
 
 /**
  * @author : Gathsara
