@@ -7,5 +7,17 @@ package lk.ijse.desingPatterns.behavioural.strategy;
 public class Test {
     public static void main(String[] args) {
 
+        //Initialize context
+        Player player = new Player();
+
+        //Set one strategy
+        player.setMovement(new WalkStrategy());
+        player.movePlayer();
+
+        //set another strategy
+        player.setMovement(new RunStrategy());
+        player.movePlayer();
+
+        /*in runtime both algorithms will select and give necessary output*/
     }
 }
