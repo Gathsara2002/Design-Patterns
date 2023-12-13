@@ -7,5 +7,5 @@ package lk.ijse.desingPatterns.behavioural.observer.service;
 
 public interface Observer {
 
-    void update();
+    void update(String msg);
 }
