@@ -10,6 +10,6 @@ import lk.ijse.desingPatterns.behavioural.observer.service.Observer;
 public class Observer1 implements Observer {
     @Override
     public void update(String msg) {
-        System.out.println("Hi , Im observer 1");
+        System.out.println("Hi , Im observer 1 : " + msg);
     }
 }
