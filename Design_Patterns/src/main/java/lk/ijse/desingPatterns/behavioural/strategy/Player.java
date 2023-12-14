@@ -15,7 +15,7 @@ public class Player {
         this.movement = movement;
     }
 
-    public void movePlayer(){
+    public void movePlayer() {
         movement.move();
     }
 }

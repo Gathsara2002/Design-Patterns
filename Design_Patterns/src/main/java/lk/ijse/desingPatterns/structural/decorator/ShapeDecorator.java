@@ -15,7 +15,7 @@ Component වල behaviors modify කරයි / අලුතින් add ක�
 Concrete Decorators වලට common interface එකක් සපයයි.
  */
 
-public abstract class ShapeDecorator implements Shape{
+public abstract class ShapeDecorator implements Shape {
 
     protected Shape shape;
 
