@@ -5,7 +5,7 @@ package lk.ijse.desingPatterns.creational.factory;
  * created : 11/21/2023 -- 9:11 PM
  **/
 
-public class Factory {
+public class Main {
     public static void main(String[] args) {
         VehicleFactory vehicleFactory = new VehicleFactoryImpl();
 
